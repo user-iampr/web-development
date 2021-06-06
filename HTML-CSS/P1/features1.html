@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features 1</title>
+</head>
+<body>
+        <!-- Show other website in ours -->
+        <iframe src="https://www.ndtv.com" frameborder="2" width="300" height="150">NDTV</iframe>
+        <iframe src="https://www.wionews.com" frameborder="2" width="300" height="150">Wionews</iframe>
+        <hr>
+        <!-- Audio -->
+        <audio controls>
+            <source src="audios/m_audio1.mp3" type="audio/mpeg">
+            <source src="audios/m_audio1.ogg" type="audio/ogg">
+            Your browser does not support the audio tag.
+        </audio>
+        <hr>
+        <!-- Video -->
+        <video controls width="400" height="230">
+            <source src="videos/m_cool_edit1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <video controls autoplay width="200" height="330">
+            <source src="videos/m_vid2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <hr>
+        <h3>PDF file embeded</h3>
+        <!-- Add PDF -->
+        <!-- 1. embed -->
+        <embed src="files/cc_file.pdf" type="application/pdf">
+        <!-- 2. iframe -->
+        <iframe src="files/cc_file.pdf" frameborder="1" width="600" height="300"></iframe>
+        <!-- 3. object -->
+        <object data="files/cc_file.pdf" type="application/pdf"></object>
+        <hr>
+        <h3>Youtube video</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/w-yE-P3htqQ" title="YouTube video player"
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        <hr>
+        <h3>Google Maps</h3>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d16631.060192400426!2d78.21050907385623!3d28.801631150789234!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x175aa29ecbda3d2b!2sMoga%20Tourist%20Dhaba!5e0!3m2!1sen!2sin!4v1622720368576!5m2!1sen!2sin"
+            width="300" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <hr>
+        <!-- Html Entities - print <div> -->
+        Html Entities: <br>
+        <!-- name - &name; -->
+        &lt;div&gt;
+        <!-- number - &#number; -->
+        &#60;div&#62;
+        <!-- giving spaces  -->
+        Hello &nbsp;&nbsp;&nbsp;&nbsp; World
+        <hr>
+        <!-- Symbols and emojies -->
+        &#8721; &sum; &#65; &#66; &#67;
+        <!-- by UTF-8 --> &#128512; &#128151;
+        <hr>
+        <!--     Examples of non-semantic elements: <div> and <span> - Tells nothing about its content.
+        Examples of semantic elements: <form>, <table>, and <article> - Clearly defines its content.
+            In HTML there are some semantic elements that can be used to define different parts of a web page:
+            <article>
+                <aside>
+                <details>
+                <figcaption>
+                <figure>
+                <footer>
+                <header>
+                <main>
+                <mark>
+                <nav>
+                <section>
+                <summary>
+                <time> -->
+        <!-- Use Image map generator to make image maps -->
+        <img src="images/buy_workspace.jpg" usemap="#image_map">
+        <map name="image_map">
+            <area alt="Desktop" title="Desktop" href="https://www.amazon.in/s?k=desktop&ref=nb_sb_noss_1"
+                coords="47,30,381,260" shape="rect">
+            <area alt="Cup" title="Cup" href="https://www.amazon.in/s?k=cup&ref=nb_sb_noss_1" coords="496,196,57"
+                shape="circle">
+            <area alt="Keyboard" title="Keyboard"
+                href="https://www.amazon.in/s?k=key+board&crid=S24MI599AFNR&sprefix=key%2Caps%2C388&ref=nb_sb_ss_ts-doa-p_4_3"
+                coords="112,322,337,409" shape="rect">
+            <area alt="Mouse" title="Mouse" href="https://www.amazon.in/s?k=mouse&ref=nb_sb_noss_1"
+                coords="74,343 62,348 56,357 57,368 56,387 64,398 76,403 89,397 94,384 91,353 84,346 74,343 "
+                shape="polygon">
+        </map>
+        <hr>
+</body>
+</html>

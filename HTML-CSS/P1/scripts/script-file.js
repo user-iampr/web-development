@@ -1,0 +1,1 @@
+alert("Welcome to HTML features page!");

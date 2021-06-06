@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+</head>
+<body>
+    <h2>Page for tables:</h2>
+    
+    
+    <h2>Tables:</h2>
+    <table border="1">
+        <tr>
+            <th>col 1</th>
+            <th>col 2</th>
+            <th>col 3</th>
+        </tr>
+        <tr>
+            <td>data 1</td>
+            <td>data 2</td>
+            <td>data 3</td>
+        </tr>
+        <tr>
+            <td>data 4</td>
+            <td>data 5</td>
+            <td>data 6</td>
+        </tr>
+        <tr>
+            <td>data 7</td>
+            <td>data 8</td>
+            <td>data 9</td>
+        </tr>
+    </table>
+    <hr>
+        <!-- For combine use span -->
+    <table border="1">
+        <caption>Caption: This is an ultimate table you shall find</caption>
+        <tr>
+            <th>row 1</th>
+            <td rowspan="2">data 1</td>
+            <td><img src="images/img_ff.jpeg" alt="Free Fire Image" width="200" height="100"></td>
+            <td>data 3</td>
+        </tr>
+        <tr>
+            <th>row 2</th>
+            
+            <td>data 5</td>
+            <td>data 6</td>
+        </tr>
+        <tr>
+            <th>row 3</th>
+            <td colspan="3"><a href="https://www.garena.sg" target="_blank" title="Go to the official Garena Page">Go to the website</a></td>
+        </tr>
+    </table>
+    <hr>
+
+    <!-- Header body footer & Nested Table-->
+    <table border="3">
+        <thead style="color: crimson;"> 
+            <tr>
+                <th>col 1</th>
+                <th>col 2</th>
+                <th>col 3</th>
+            </tr>
+        </thead>
+        <tbody style="color: cornflowerblue;">
+            <tr>
+                <td>data 1</td>
+                <td>data 2</td>
+                <td>data 3</td>
+            </tr>
+            <tr>
+                <td>data 4</td>
+                <td>
+                    <table border="5">
+                        <tbody style="color:green;">
+                            <tr>
+                                <td>Tea</td>
+                                <td>Coffee</td>
+                            </tr>
+                            <tr>
+                                <td>Pespi</td>
+                                <td>Coke</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td>data 6</td>
+            </tr>
+            <tr>
+                <td>data 7</td>
+                <td>data 8</td>
+                <td>data 9</td>
+            </tr>
+        </tbody>
+        <tfoot style="color: darkblue;">
+            <tr>
+                <th>col 1</th>
+                <th>col 2</th>
+                <th>col 3</th>
+            </tr>
+        </tfoot>
+    </table>
+    <hr>
+</body>
+</html>

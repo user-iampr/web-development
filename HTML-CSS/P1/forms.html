@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <!-- # USED FOR BACKEND <form method="GET/POST" action="submit.php" > by default - GET , submit on same page -->
+    <form>
+        <h3>Form 1</h3>
+        <div>
+            Text: <br>
+            <input type="text">
+
+        </div>
+        <div>
+            <br>
+            <input type="submit" value="Submit the form">
+            <br>
+        </div>
+        <div>
+            <br>
+            Color: <br>
+            <input type="color">
+            <br>
+        </div>
+        <div>
+            <br>
+            Date: <br>
+            <input type="date">
+            <br>
+        </div>
+        <div>
+            <br>
+            Email: <br>
+            <input type="email">
+            <br>
+        </div>
+        <div>
+            <br>
+            Hidden: <br>
+            <input type="hidden" value="Delhi">
+            <br>
+        </div>
+        <div>
+            <br>
+            Number: <br>
+            <input type="number" value="50" step="5">
+            <br>
+        </div>
+        <div>
+            <br>
+            Password: <br>
+            <input type="password">
+            <br>
+        </div>
+        <div>
+            <br>
+            Reset: <br>
+            <input type="reset" value="Reset the form data">
+            <br>
+        </div>
+        <div>
+            <br>
+            Time: <br>
+            <input type="time">
+            <br>
+        </div>
+        <div>
+            <br>
+            URL: <br>
+            <input type="url">
+            <br>
+        </div>
+        <div>
+            <br>
+            Range: <br>
+            <input type="range">
+            <br>
+        </div>
+    </form>
+    <hr>
+    <form enctype="multipart/form-data"> <!-- enctype="multipart/form-data" when select file is used-->
+        <h3>Form 2</h3>
+        <div>
+            <br>
+            File Select: <br>
+            <input type="file">
+            <br>
+        </div>
+        <div>
+            <br>
+            Multiple file select: <br>
+            <input type="file" multiple>
+            <br>
+        </div>
+        <div>
+            <br>
+            Text (can't change see only): <br>
+            <input type="text" value="Ruok" readonly>
+            <br>
+        </div>
+        <div>
+            <br>
+            Submit: <br>
+            <input type="submit">
+            <br>
+        </div>
+        <div>
+            <br>
+            Text (look disabled): <br>
+            <input type="text" value="Ruok" disabled>
+            <br>
+        </div>
+        <div>
+            <br>
+            Text: <br>
+            <input type="text" size="50">
+            <br>
+        </div>
+        <div>
+            <br>
+            Enter Username (12 char max): <br>
+            <input type="text" maxlength="12">
+            <br>
+        </div>
+        <div>
+            <br>
+            Number min/max 10-20: <br>
+            <input type="number" min="10" max="20">
+            <br>
+        </div>
+        <div>
+            <br>
+            Text (hint in box + required + autofocus + autocomplete): <br>
+            <input type="text" placeholder="Enter Surname" required autofocus autocomplete="on">
+            <br>
+        </div>
+        <!-- name is used for BACKEND  LIKE A VARIABLE NAME -->
+        <div>
+            <br>
+            Text: <br>
+            <input type="text" name="one">
+            <input type="text" name="two">
+            <input type="text" name="three">
+            <br>
+        </div>
+        <div>
+            <br>
+            Textarea: <br>
+            <textarea cols="40" rows="10">Hello...</textarea>
+            <br>
+        </div>
+        <div>
+            <br>
+            Submit: <br>
+            <input type="image" height="50" width="100" src="https://img.pngio.com/hq-submit-button-png-transparent-submit-buttonpng-images-pluspng-submit-button-png-439_231.png">
+            <br>
+        </div>
+        <hr>
+        <h3>Form 3</h3>
+        <form>
+            Select One: <br>
+            <select>
+                <option value="c1">AUDI</option>
+                <option value="c2" selected>TATA</option>
+                <option value="c3">FARARI</option>
+            </select>
+        </form>
+        <br>
+        <form>
+            Select Many: <br>
+            <select size="2" multiple>
+                <option value="c1">AUDI</option>
+                <option value="c2" selected>TATA</option>
+                <option value="c3">FARARI</option>
+            </select>
+        </form>
+        <br>
+        <form>
+            Select from catagory: <br>
+            <select>
+                <optgroup label="Car">
+                    <option value="c1">AUDI</option>
+                    <option value="c2" selected>TATA</option>
+                    <option value="c3">FARARI</option>
+                </optgroup>
+                <optgroup label="Sports">
+                    <option value="s1">Cricket</option>
+                    <option value="s2">Football</option>
+                    <option value="s3">Hockey</option>
+                </optgroup>
+            </select>
+        </form>
+    </form>
+    <br>
+    <hr>
+    <h3>Form 4</h3>
+    <div>
+        Gender: <br>
+        <form>
+            <input type="radio" name="gender" value="male" checked>Male
+            <input type="radio" name="gender" value="female">Female
+            <input type="radio" name="gender" value="others">Others
+        </form>
+        Employee Type: <br>
+        <form>
+            <input type="radio" name="emptype" value="dev">Developer
+            <input type="radio" name="emptype" value="man" checked>Manager
+        </form>
+        What to eat:
+        <form>
+            <input type="checkbox" name="order_food" value="piz">Pizza
+            <input type="checkbox" name="order_food" value="bur">Burger
+            <input type="checkbox" name="order_food" value="dos">Dosa
+            <input type="checkbox" name="order_food" value="tea">Tea
+        </form>
+    </div>
+    <hr>
+    <h3>Form 5</h3>
+    <form>
+        Search Eatables: <br>
+        <input type="text" list="eatable_list">
+        <datalist id="eatable_list">
+            <option value="Apple">
+            <option value="Banana">
+            <option value="Tea">
+            <option value="Mango">
+            <option value="Pizza">
+        </datalist>
+        <input type="submit" value="Search!">
+    </form>
+    <br><br>
+    <form>
+        <div>
+            <label for="username">Enter Name: (Lable connected)</label> <br>
+            <input type="text" name="input_name" id="username">
+        </div>
+        <div>
+            <input type="submit">
+        </div>
+    </form>
+    <br>
+    <br>
+    <hr>
+    <h3>Form 6</h3>
+    <form>
+        <fieldset>
+            <legend>Basic Info</legend>
+            <label for="fname">First Name</label>
+            <input type="text" name="firstname" id="fname">
+            <label for="lname">Last Name</label>
+            <input type="text" name="lastname" id="lname">
+        </fieldset>
+        <fieldset>
+            <legend>Other Info</legend>
+            <label for="add">Address</label>
+            <input type="text" name="address" id="add">
+            <label for="no">Phone</label>
+            <input type="number" name="pnumber" id="no">
+        </fieldset>
+    </form>
+    <fieldset>
+        <input type="submit" value="Submit form">
+    </fieldset>
+</body>
+</html>
